@@ -1,0 +1,34 @@
+<section id="industries" class="section-padding">
+  <div class="container-custom">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-primary mb-6">Industries We Serve</h2>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        Deep sector expertise across diverse industries, delivering tailored
+        solutions that address unique challenges and opportunities.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
+      <div
+        *ngFor="let industry of industries"
+        class="group bg-white p-8 rounded-xl shadow-lg card-hover text-center border border-gray-100"
+      >
+        <div
+          class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-primary to-blue-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+        >
+          <img
+            [src]="industry.icon"
+            [alt]="industry.name"
+            class="w-8 h-8 text-white"
+          />
+        </div>
+        <h4
+          class="font-bold text-primary mb-2 group-hover:text-blue-600 transition-colors"
+        >
+          {{ industry.name }}
+        </h4>
+        <p class="text-sm text-gray-500">{{ industry.clients }}+ Clients</p>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,83 @@
+<header class="bg-primary text-white shadow-2xl sticky top-0 z-50">
+  <nav class="container-custom py-6">
+    <div class="flex justify-between items-center">
+      <div class="flex items-center space-x-4">
+        <div
+          class="w-12 h-12 bg-white rounded-full flex items-center justify-center"
+        >
+          <svg
+            class="w-8 h-8 text-primary"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2L2 7v10c0 5.55 3.84 9.739 8.885 10.711L12 28l1.115-.289C18.16 26.739 22 22.55 22 17V7L12 2z"
+            />
+          </svg>
+        </div>
+        <div class="flex flex-col">
+          <h1 class="text-2xl font-bold">Sawibe & Company Limited</h1>
+          <p class="text-sm opacity-90">Certified Public Accountants</p>
+        </div>
+      </div>
+
+      <div class="hidden md:flex space-x-8">
+        <a href="#home" class="hover:opacity-80 transition-opacity">Home</a>
+        <a href="#services" class="hover:opacity-80 transition-opacity"
+          >Services</a
+        >
+        <a href="#industries" class="hover:opacity-80 transition-opacity"
+          >Industries</a
+        >
+        <a href="#about" class="hover:opacity-80 transition-opacity">About</a>
+        <a href="#contact" class="hover:opacity-80 transition-opacity"
+          >Contact</a
+        >
+      </div>
+
+      <button
+        class="md:hidden text-white focus:outline-none"
+        (click)="toggleMobileMenu()"
+      >
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            [attr.d]="
+              mobileMenuOpen
+                ? 'M6 18L18 6M6 6l12 12'
+                : 'M4 6h16M4 12h16M4 18h16'
+            "
+          ></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="md:hidden mt-4" [class.hidden]="!mobileMenuOpen">
+      <div class="flex flex-col space-y-2">
+        <a href="#home" class="hover:opacity-80 transition-opacity py-2"
+          >Home</a
+        >
+        <a href="#services" class="hover:opacity-80 transition-opacity py-2"
+          >Services</a
+        >
+        <a href="#industries" class="hover:opacity-80 transition-opacity py-2"
+          >Industries</a
+        >
+        <a href="#about" class="hover:opacity-80 transition-opacity py-2"
+          >About</a
+        >
+        <a href="#contact" class="hover:opacity-80 transition-opacity py-2"
+          >Contact</a
+        >
+      </div>
+    </div>
+  </nav>
+</header>
