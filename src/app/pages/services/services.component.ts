@@ -59,5 +59,18 @@ export class ServicesComponent {
         'Custom ERP Implementation: Tailored, industry-specific integrations.',
       ],
     },
+    {
+      title: 'Financial Analysis & Strategic Insights',
+      description:
+        'Data-driven financial assessment and performance intelligence for informed decision-making and growth.',
+      icon: 'fas fa-chart-line',
+      items: [
+        'Financial Health Evaluation: Comprehensive review of profitability, liquidity, solvency, and efficiency through ratio and trend analysis.',
+        'Budgeting & Forecasting: Data-backed projections and scenario modeling for resource optimization and long-term planning.',
+        'Investment Advisory: Financial and commercial due diligence, market research, business plan, investment memorandum, business valuation and negotiation support.',
+        'Risk & Variance Control: Early identification of financial risks through variance tracking and sensitivity analysis.',
+        'Reporting & Stakeholder Insights: Clear dashboards and reports that enhance transparency, compliance, and investor confidence.',
+      ],
+    }
   ];
 }
